@@ -63,7 +63,30 @@ class LSTMTagger(nn.Module):
 model = LSTMTagger(EMBEDDING_DIM, HIDDEN_DIM, len(word_to_ix), len(tag_to_ix))
 loss_function = nn.NLLLoss()
 optimizer = optim.SGD(model.parameters(), lr=0.1)
+
 with torch.no_grad():
     inputs = prepare_sequence(training_data[0][0], word_to_ix)
     tag_scores = model(inputs)
+    print('Before training')
+    print(tag_scores)
+
+for epoch in range(300):
+    print('epoch {}'.format(epoch + 1))
+    running_loss = 0.0
+    for s, tags in training_data:
+        model.zero_grad()
+        model.hidden = model.init_hidden()
+        s_in = prepare_sequence(s, word_to_ix)
+        targets = prepare_sequence(tags, tag_to_ix)
+        tag_scores = model(s_in)
+        loss = loss_function(tag_scores, targets)
+        running_loss += loss.item()
+        loss.backward()
+        optimizer.step()
+    print('loss: {:.6f}'.format(running_loss / len(training_data)))
+
+with torch.no_grad():
+    inputs = prepare_sequence(training_data[0][0], word_to_ix)
+    tag_scores = model(inputs)
+    print('After training')
     print(tag_scores)
