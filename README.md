@@ -20,3 +20,7 @@ Python code. ~~Mainly pytorch~~. Now mainly TensorFlow.
 - Dive into Ruichang's seq2seq model in tf but not finished yet.  
 - Discussed with Zili and got a very deep understanding about LSTM as well as how to implement LSTM from scratch.  
 - Make weekly video by sing 《祖传程序员》 :)  
+### 2018-08-04 - 2018-08-05  
+- Make a install image for UCloud GPU VM including CUDA 9, cudnn 7 and tensorflow-gpu  
+- Add teacher forcing to Yunsheng's model using ScheduledEmbeddingTrainingHelper  
+- Try to train Yunsheng's model on both local GPU and UCloud GPU, however there seems to be some problems when restoring checkpoints in UCloud GPU. Need discussion tomorrow  
