@@ -24,3 +24,7 @@ Python code. ~~Mainly pytorch~~. Now mainly TensorFlow.
 - Make a install image for UCloud GPU VM including CUDA 9, cudnn 7 and tensorflow-gpu  
 - Add teacher forcing to Yunsheng's model using ScheduledEmbeddingTrainingHelper  
 - Try to train Yunsheng's model on both local GPU and UCloud GPU, however there seems to be some problems when restoring checkpoints in UCloud GPU. Need discussion tomorrow  
+### 2018-08-06  
+- Work with Yunsheng to finilize our baseline model (seq2seq with attention and beam search). Finally make it works on UCloud GPU. The bug is that dynamically creating dictionary is unreliable. Now we generate a static dictionary into a txt file and then load it from file to prevent disparity.  
+- Meeting with out tutor. Solved some questions. And some new ideas are introduced by our tutor (e.g. RNN slot filling, skip-thoughts vector)  
+- Finished reading the paper "Skip thoughts vector".  
