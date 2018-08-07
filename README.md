@@ -28,3 +28,10 @@ Python code. ~~Mainly pytorch~~. Now mainly TensorFlow.
 - Work with Yunsheng to finilize our baseline model (seq2seq with attention and beam search). Finally make it works on UCloud GPU. The bug is that dynamically creating dictionary is unreliable. Now we generate a static dictionary into a txt file and then load it from file to prevent disparity.  
 - Meeting with out tutor. Solved some questions. And some new ideas are introduced by our tutor (e.g. RNN slot filling, skip-thoughts vector)  
 - Finished reading the paper "Skip thoughts vector".  
+### 2018-08-07
+- Generate two samples (<http://pw.qwqq.pw/pavrjzcuf> and <http://pw.qwqq.pw/psbwtra8k>) with seq2seq model (attention, LSTM, Beam Search, rnn_size=256, num_layers=4, final_loss=3.1)  
+- Finished reading paper "Topic to essay generation with neural network". Ready to go through the relating tf code.  
+- Shijun & Weiwen shared their ideas towards paper "Chinese Poetry Generation with Planning based NN". Ready to write code about keywords extraction.  
+- Mengxin shared her ideas towards paper "An interactive Poetry Generation System".  Ready to write code about modified beam search with score mentioned in that paper.  
+- Planning to change the encoder to Bi-LSTM in the previous model.  
+- Planning to study Yunsheng's skip-thoughts model implementation.  
