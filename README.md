@@ -35,3 +35,8 @@ Python code. ~~Mainly pytorch~~. Now mainly TensorFlow.
 - Mengxin shared her ideas towards paper "An interactive Poetry Generation System".  Ready to write code about modified beam search with score mentioned in that paper.  
 - Planning to change the encoder to Bi-LSTM in the previous model.  
 - Planning to study Yunsheng's skip-thoughts model implementation.  
+### 2018-08-08  
+- Implement Bi-LSTM Encoder and trained for a about 80 epochs. Some improvements towards the fluency of the sentences have emerged.  
+- Study Yunsheng's Skip Thought model. Great improvements towards the semantic association between sentences have emerged.  
+- Combine two models mentioned above to generate Bi-SkipThought model. Training in progress.  
+- Discuss about keyword generation with Yunsheng and Weiwen. Planning to implement a keyword-to-sentence model tomorrow. Need further discussion with tutor.  
