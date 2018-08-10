@@ -39,4 +39,8 @@ Python code. ~~Mainly pytorch~~. Now mainly TensorFlow.
 - Implement Bi-LSTM Encoder and trained for a about 80 epochs. Some improvements towards the fluency of the sentences have emerged.  
 - Study Yunsheng's Skip Thought model. Great improvements towards the semantic association between sentences have emerged.  
 - Combine two models mentioned above to generate Bi-SkipThought model. Training in progress.  
-- Discuss about keyword generation with Yunsheng and Weiwen. Planning to implement a keyword-to-sentence model tomorrow. Need further discussion with tutor.  
+- Discuss about keyword generation with Yunsheng and Weiwen. Planning to implement a keyword-to-sentence model tomorrow. Need further discussion with tutor.   
+### 2018-08-09  
+- Discuss with tutor. Three topic oriented generation model (Baidu's, HIU's and tutor's) are proposed. Planning to try the third model.  
+- Start to write frontend with Vue.js.  
+- Try to train Bi-SkipThought but the loss is still too high QAQ.   
