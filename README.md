@@ -44,3 +44,10 @@ Python code. ~~Mainly pytorch~~. Now mainly TensorFlow.
 - Discuss with tutor. Three topic oriented generation model (Baidu's, HIU's and tutor's) are proposed. Planning to try the third model.  
 - Start to write frontend with Vue.js.  
 - Try to train Bi-SkipThought but the loss is still too high QAQ.   
+### 2018-08-10 - 2018-08-12  
+- Modified Bi-RNN_Encoder, canceling reversed input and reducing number of layers to 2. The [result](http://pw.qwqq.pw/pkwyti2mj) seems prety exciting.  
+- Tried to apply the same trick to Bi-SkipThought but the results hardly improved and the loss is still high compared to not using SkipThought.  
+- Trying to understand Custom BeamSearch code given by tutor. There are some questions needing furthur discuss.  
+### 2018-08-13  
+- Continue to develop frontend. Here's the [github repo](https://github.com/zhouziqunzzq/rg-frontend).  
+- Keyword selector & Template selector are nearly finished. Working on Lyrics player.  
