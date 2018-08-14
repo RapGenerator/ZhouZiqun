@@ -51,3 +51,7 @@ Python code. ~~Mainly pytorch~~. Now mainly TensorFlow.
 ### 2018-08-13  
 - Continue to develop frontend. Here's the [github repo](https://github.com/zhouziqunzzq/rg-frontend).  
 - Keyword selector & Template selector are nearly finished. Working on Lyrics player.  
+### 2018-08-14  
+- RapGenerator Frontend WIP.  
+- Finished Lyric player.  
+- Finalizing Keyword Generate FE.  
